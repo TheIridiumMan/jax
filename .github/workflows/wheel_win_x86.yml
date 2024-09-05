@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false  # Don't stop all wheel builds if one has a test failure.
       matrix:
-        os: [windows-2019-32core]
+        os: [windows-latest]
         arch: [i386]
         pyver: ['3.10', '3.11', '3.12']
     name: ${{ matrix.os }} ${{ matrix.pyver }} jaxlib wheel build
